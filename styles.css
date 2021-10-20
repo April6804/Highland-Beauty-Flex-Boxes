@@ -1,0 +1,138 @@
+body{
+    background:rgb(181, 165, 170);
+    padding:0;
+    margin:0;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.logo{
+  /* Center anything with this code  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* You can change the width to best suite your element */
+    width:60%;
+    /* Do not let the logo get any larger than original file width */
+    max-width:300px;
+}
+
+nav{
+    /* --- Background Color for the NAV ---  */
+    background: rgb(255, 255, 255, 0.3);
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+nav a{
+    text-align: center;
+    color:white;
+    font-size: 1.5em;
+    padding:15px;
+    margin:10px;
+    display: inline-block;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* Styles for hero */
+.hero{
+    background-image: url("hair-2537564_1920.jpg");
+    /* Height of the hero is 60% of the Viewport Height */
+    height:60vh;
+    /* Make the image fill the space with 'cover' */
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* Show more of the right side of the image */
+    background-position: right;
+    /* Must have position relative for the text and button to sit on top of the hero */
+    position: relative;
+}
+.hero h2{
+  /* Must have position absolute to move text around the hero container */
+    position: absolute;
+    /* Use top, right, bottom or left to play with the position of the text */
+    bottom:20%;
+    right:5%;
+}
+button{
+  /* Must have position absolute to move button around the hero container */
+    position:absolute;
+    /* Use top, right, bottom or left to play with the position of the text */
+    bottom: 8%;
+    right:5%;
+    /* remove background color for button */
+    background: none;
+    padding:5px;
+    /* add border for an outline */
+    border:2px black solid;
+    color:black;
+    font-size: 1.3em;
+    /* round the edges of button */
+    border-radius: 5px;
+}
+
+/* END CONTACT HERO STYLES ------------------ */
+
+img{
+    /* Make all images responsive */
+    width: 100%;
+    /* Make it so they can be centered */
+    display: block;
+    margin:1% auto;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 30%;
+  margin: 10px;
+  padding:20px;
+}
+
+
+
+
+footer{
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color:white;
+}
+
+/* medium screen size below --------- */
+@media screen and (min-width: 700px) {
+        .logo{
+            /* width:350px; */
+        }
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 30%;
+          margin: 10px;
+          padding:20px;
+
+        }
+
+
+}
+/* large screen styles below */
+@media screen and (min-width: 1300px) {
+
+
+
+}
