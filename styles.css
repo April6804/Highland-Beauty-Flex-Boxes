@@ -89,14 +89,19 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding:10px;
 }
 
 
 .flex-container > div {
   background-color: #f1f1f1;
-  width: 30%;
-  margin: 10px;
-  padding:20px;
+  margin-bottom: 10px;
+  min-width: 100px;
+  grid-gap: 10px;
+  padding:2%;
+  flex-grow: 1;
+
+  /* flex-shrink: 1; */
 }
 
 
@@ -116,14 +121,13 @@ footer a{
 }
 
 /* medium screen size below --------- */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
         .logo{
             /* width:350px; */
         }
         .flex-container > div {
-          background-color: #f1f1f1;
-          width: 30%;
-          margin: 10px;
+          width: 43%;
+          margin: 1%;
           padding:20px;
 
         }
@@ -133,6 +137,12 @@ footer a{
 /* large screen styles below */
 @media screen and (min-width: 1300px) {
 
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 29%;
+    margin: 1%;
+    padding:20px;
 
+  }
 
 }
