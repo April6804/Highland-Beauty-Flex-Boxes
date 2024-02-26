@@ -19,17 +19,17 @@ body{
 
 nav{
     /* --- Background Color for the NAV ---  */
-    background: rgb(255, 255, 255, 0.3);
+    background: rgb(255, 255, 255, 0.2);
     text-align: center;
-    font-family: Georgia, serif;
+    font-family: arial, sans-serif;
 }
 
 nav a{
     text-align: center;
     color:white;
-    font-size: 1.4em;
+    font-size: 1.1em;
     padding:10px;
-    margin:10px;
+    /* margin:5px; */
     display: block;
     text-decoration: none;
 }
@@ -54,7 +54,7 @@ nav a:hover{
   /* Must have position absolute to move text around the hero container */
     position: absolute;
     /* Use top, right, bottom or left to play with the position of the text */
-    bottom:20%;
+    bottom:15%;
     right:5%;
 }
 button{
@@ -65,7 +65,7 @@ button{
     right:5%;
     /* remove background color for button */
     background: none;
-    padding:5px;
+    padding:8px;
     /* add border for an outline */
     border:2px black solid;
     color:black;
@@ -137,7 +137,15 @@ footer a{
     margin:10px;
     display: inline-block;
 }
-
+  nav a{
+    text-align: center;
+    color:white;
+    font-size: 1.4em;
+    padding:10px;
+    margin:10px;
+    display: inline-block;
+    text-decoration: none;
+  }
 
 }
 /* large screen styles below */
